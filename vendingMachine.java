@@ -42,6 +42,13 @@ public class vendingMachine {
                     return;
                 }
             }
+            if (product instanceof ChocolateBar) {
+                if (Objects.equals(product.getName(), name)){
+                    System.out.println("Thank You For Your Purchase");
+                    System.out.println(product.displayInfo());
+                    return;
+                }
+            }
 
         }
     }
@@ -68,6 +75,12 @@ public class vendingMachine {
         if (str.equals("4"))
             for (Product product : products) {
                 if (product instanceof JarOfCoffee) {
+                    System.out.println(product.displayInfo());
+                }
+            }
+        if (str.equals("5"))
+            for (Product product : products) {
+                if (product instanceof ChocolateBar) {
                     System.out.println(product.displayInfo());
                 }
             }

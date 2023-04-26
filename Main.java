@@ -29,9 +29,15 @@ public class Main {
         Product jC4 = new JarOfCoffee("StarBacks", "Эспрессо", 4, 145f, 0.33f);
         Product jC5 = new JarOfCoffee("StarBacks", "Без кофеина", 0, 75f, 0.33f);
 
+        Product cB1 = new ChocolateBar("Nestle", "Апельсин",50f,150);
+        Product cB2 = new ChocolateBar("Nestle", "Вишня",55f,150);
+        Product cB3 = new ChocolateBar("Nestle", "Яблоко",53f,150);
+        Product cB4 = new ChocolateBar("Nestle", "Миндаль",52f,150);
+        Product cB5 = new ChocolateBar("Nestle", "Персик",57f,150);
+
 
         List<Product> products = new ArrayList<>();
-
+        //напитки
         products.add(bW1);
         products.add(bW2);
         products.add(bW3);
@@ -52,6 +58,12 @@ public class Main {
         products.add(jC3);
         products.add(jC4);
         products.add(jC5);
+        //шоколадные батончики
+        products.add(cB1);
+        products.add(cB2);
+        products.add(cB3);
+        products.add(cB4);
+        products.add(cB5);
 
         vendingMachine machine = new vendingMachine(products);
         mainMenu.Menu();
