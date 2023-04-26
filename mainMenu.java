@@ -16,7 +16,8 @@ public class mainMenu extends vendingMachine{
                 1 - Water
                 2 - Milk
                 3 - Juice
-                4 - Coffee""");
+                4 - Coffee
+                5 - Chocolate Bar""");
             System.out.print("Choice: ");
             str = sc.nextLine();
             if (str.equals("1")) {
@@ -45,6 +46,14 @@ public class mainMenu extends vendingMachine{
                 vendingMachine.getProduct(str);
             }
             if (str.equals("4")) {
+
+                System.out.println("in Stock:");
+                vendingMachine.showProduct(str);
+                System.out.println("Input name of product for buy or push 'Enter' for return back");
+                str = sc.nextLine();
+                vendingMachine.getProduct(str);
+            }
+            if (str.equals("5")) {
 
                 System.out.println("in Stock:");
                 vendingMachine.showProduct(str);

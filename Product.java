@@ -16,6 +16,10 @@ public class Product {
     public Product() {
         this("Продукт");
     }
+    public Product(String brand, float price) {
+        this.brand = brand;
+        this.price = price;
+    }
 
     public Product(String name) {
         this(name, "Noname");
