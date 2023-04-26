@@ -16,7 +16,7 @@ public class ChocolateBar extends Product {
     @Override
     String displayInfo() {
         //return super.displayInfo();
-        return String.format("Название: %-10s |Вкус: %-10s |Цена: %.2f |Масса: %.1f",brand,taste,price,weight);
+        return String.format("Название: %-10s |Вкус: %-10s |Цена: %.2f |Нетто: %-3",brand,taste,price,weight);
     }
 
     public int getWeight() {
